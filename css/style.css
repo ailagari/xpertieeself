@@ -390,6 +390,12 @@ a:hover,[type="submit"]:hover{
         margin: 0 auto;
     }
 }
+@media (max-width: 480px){
+    #nav div.right div.respmenu {
+        margin-left: 64px;
+        display: none;
+    }
+}
 @media (max-width: 360px){
     #nav div.right div.respmenu {
         position: absolute;
