@@ -1,0 +1,404 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	outline: none;
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem 0 1rem;
+    list-style-type: none;
+
+}
+
+.slick-dots li {
+    margin: 0 0.25rem;
+}
+
+.slick-dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: none;
+    border-radius: 25px;
+    background-color: grey;
+    text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #02368a;
+    width: 20px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    list-style-type: none;
+    position: relative;
+    bottom: 62px;
+}
+
+.slick-arrow {
+    display: none;
+}
+
+.slick-prev {
+    display: none;
+}
+
+.slick-next {
+    display: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+header, section, article, aside, nav, footer, address {
+	display: block;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'open_sansregular',Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #333;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+input,textarea,select{
+	font-family: 'open_sansregular',Arial, Helvetica, sans-serif;
+}
+p{
+	line-height: 1.6em;
+}
+br.clear{
+	clear: both;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+a:hover,[type="submit"]:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+#nav{
+    padding: 10px 0;
+}
+#nav div.content{
+    display: flex;
+    align-items: center;
+}
+#nav div.left{
+    width: 25%;
+    margin-right: 15%;
+}
+#nav div.left h1{
+    display: block;
+}
+#nav div.left h1 a{
+    display: inline-block;
+}
+#nav div.left h1 a img{
+    width: 100%;
+    display: block;
+}
+#nav div.right{
+    width: 60%; 
+    position: relative;
+}
+#nav div.right div.static-menu{
+    display: block; 
+}
+#nav div.right div.static-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#nav div.right ul div.static-menu li{
+    margin-right: 20px;
+    list-style: none;
+    border-bottom: 3px solid white;   
+}
+#nav div.right div.static-menu ul li:hover{
+    list-style: none;
+    border-bottom: 3px solid #0F9D58;   
+}
+#nav div.right div.static-menu ul li:last-child {
+    border-bottom: 2px solid white;
+}
+#nav div.right div.static-menu ul li:last-child:hover a{
+    margin-right: 20px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: #0F9D58;
+    border: 2px solid #0F9D58;
+}
+#nav div.right div.static-menu ul li a{
+    color: #0F9D58;
+    display: inline-block;
+    font-size: 17px;
+	font-family: 'latobold';
+    margin-bottom: 7px;
+    
+}
+#nav div.right div.static-menu ul li a:hover{
+    color: #0F9D58;
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'latobold';
+}
+#nav div.right div.static-menu ul li:last-child a{
+    margin-right: 20px;
+    background-color: #0F9D58;
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: white;
+    border: 2px solid white;
+    margin-bottom: 0px;
+}
+
+#nav div.right div.respmenu{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    padding: 20px 10px;
+    width: 30%;
+    margin-left: 67%;
+    display: none;
+}
+#nav div.right div.respmenu ul{
+    padding: 20px 10px;
+}
+#nav div.right div.respmenu ul li{
+    margin: 20px 0;
+}
+#nav div.right div.respmenu ul li :hover{
+    border-bottom:2px solid #0F9D58;
+}
+#nav div.right div.respmenu ul li a{
+    color: #0F9D58;
+    font-size: 17px;
+	font-family: 'latobold';
+}
+#nav div.right div.respmenu ul li:hover a{
+    color: #0F9D58;
+    font-size: 17px;
+	font-family: 'latobold';
+}
+
+#menu-icon {
+    margin-left: 67%;
+    display: inline;
+    font-size: 31px;
+    display: none;
+}
+#close{
+    margin-left: 67%;
+    display: none;
+    font-size: 31px;
+}
+.zmdi-close{
+    color: #0F9D58;
+}
+.zmdi-menu{
+    color: #0F9D58;
+}
+/* end of navbar */
+
+#spotlight{
+    padding: 30px 0;
+}
+#spotlight div.spotcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#spotlight div.spotcontent div.left{
+    width: 45%;
+    margin-right: 10%;
+}
+#spotlight div.spotcontent div.left h1{
+    color: #0F9D58;
+	font-family: 'latobold';
+	font-size: 69px;
+}
+#spotlight div.spotcontent div.left h2{
+    margin-top: 30px;
+	color: #0F9D58;
+	font-family: 'latoregular';
+	font-size: 22px;
+}
+#spotlight div.spotcontent div.left div.spot-login{
+   margin-top: 50px;
+   display: inline-block;
+   border: 3px solid white;
+   background-color: #0F9D58;
+   border-radius: 25px;
+}
+#spotlight div.spotcontent div.left div.spot-login a{
+   padding: 15px 20px;
+   color: white;
+   font-family: 'latobold';
+   display: block;
+}
+#spotlight div.spotcontent div.left div.spot-login:hover{
+    border: 3px solid #0F9D58;
+    background-color: white;
+}
+#spotlight div.spotcontent div.left div.spot-login:hover a{
+    color: #0F9D58;
+}
+#spotlight div.spotcontent div.right{
+    width: 45%;
+}
+#spotlight div.spotcontent div.right ul li{
+    width: 100%;
+}
+#spotlight div.spotcontent div.right ul li a{
+    width: 100%;
+    display: inline-block;
+}
+#spotlight div.spotcontent div.right ul li a:hover{
+    width: 100%;
+    display: inline-block;
+    color: red;
+}
+#spotlight div.spotcontent div.right ul li img{
+    width: 100%;
+    display: block;
+}
+/* spotlight completed */
+
+#footer{
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #0F9D58;
+    color: white;
+    font-style: italic;
+    font-family: 'latoregular';
+
+}
+
+
+/* End of website */
+
+@media (max-width: 940px){
+    #spotlight div.spotcontent div.left h1 {
+        color: #0F9D58;
+        font-family: 'latobold';
+        font-size: 43px;
+    }
+    #nav div.right {
+        width: 60%;
+        display: block;
+    }
+    #nav div.right div.static-menu{
+        display: none; 
+    }
+    #menu-icon {
+        margin-left: 67%;
+        display: inline;
+        font-size: 31px;
+        display: block;
+    }
+}
+@media (max-width: 740px){
+    #spotlight div.spotcontent div.left h1 {
+        color: #0F9D58;
+        font-family: 'latobold';
+        font-size: 40px;
+    }
+}
+@media (max-width: 640px){
+    #nav div.right div.respmenu {
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        padding: 20px 10px;
+        width: 75%;
+        margin-left: 100px;
+        display: none;
+    }
+}
+@media (max-width: 540px){
+    #spotlight div.spotcontent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    #spotlight div.spotcontent div.left {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #spotlight div.spotcontent div.right {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 360px){
+    #nav div.right div.respmenu {
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        padding: 20px 10px;
+        width: 109%;
+        margin-left: 0;
+        display: none;
+    }
+}
+
